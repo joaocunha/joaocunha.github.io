@@ -51,7 +51,7 @@
 
         // Creates a stylesheet object that will hold the rules
         createStylesheet: function() {
-            var stylesheet = document.createElement('style');
+            var stylesheet = doc.createElement('style');
             stylesheet.rel = 'stylesheet';
             stylesheet.type = 'text/css';
             stylesheet.id = VUnit.settings.stylesheetId;
@@ -78,14 +78,15 @@
             if (stylesheet.styleSheet) {
                 stylesheet.styleSheet.cssText = rules;
             } else {
-                stylesheet.appendChild(document.createTextNode(rules));
+                stylesheet.appendChild(doc.createTextNode(rules));
             }
         },
 
         // Appends the stylesheet on the head tag
         appendStylesheetOnHead: function(stylesheet) {
-            var legacyStylesheet = document.getElementById(VUnit.settings.stylesheetId),
-                head = document.getElementsByTagName('head')[0];
+            var legacyStylesheet = doc.getElementById(VUnit.settings.stylesheetId),
+                // borrowed head detection from restyle.js
+                head = doc.head || doc.getElementsByTagName('head')[0] || doc.documentElement;
 
             (legacyStylesheet) && head.removeChild(legacyStylesheet);
 
