@@ -130,9 +130,11 @@ p {
     font-size: 16px;
     cursor: pointer;
     border-radius: 50%;
+    opacity: .6;
+    outline: none;
 }
 .press-me:hover {
-    background: #666666;
+    opacity: 1;
 }
 
 @media (max-width: 600px) {
