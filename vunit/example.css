@@ -137,6 +137,13 @@ p {
     opacity: 1;
 }
 
+.mobile-notice {
+    background: beige;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: none;
+}
+
 @media (max-width: 600px) {
     .vunit {
         transition: all .5s;
@@ -148,6 +155,10 @@ p {
         height: 50px;
         width: 50px;
         font-size: 12px;
+    }
+
+    .mobile-notice {
+        display: block;
     }
 }
 
