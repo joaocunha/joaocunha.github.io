@@ -119,7 +119,7 @@ p {
 }
 
 .press-me {
-    background: #333333;
+    background: fuchsia;
     border: none;
     position: fixed;
     top: 20px;
