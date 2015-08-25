@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hi, I'm Jwow</title>
+    <meta charset="utf-8">
+    <title>João Cunha - Front-End Engineer</title>
+    <style>
+      html, body {
+        font-family: monospace;
+      }
+    </style>
   </head>
-
   <body>
-      <h1>Hi, I'm Jwow.</h1>
-      <p>joao@joaocunha.net</p>
+    <div itemscope itemtype="http://schema.org/Person">
+      <h1 itemprop="name">João Cunha</h1>
+      <h2 itemprop="jobTitle">Front-End Engineer</h2>
+      <ul>
+        <li><a href="mailto:joao@joaocunha.net" itemprop="email">joao@joaocunha.net</a></li>
+        <li><a href="https://github.com/joaocunha">GitHub</a></li>
+        <li><a href="https://twitter.com/joaocunha">Twitter</a></li>
+      </ul>
+      <img src="http://www.gravatar.com/avatar/dcefb2e14174a2488cdffd7cfa721b2f" itemprop="image" alt="Photo of João Cunha, Front-End Engineer" />
+    </div>
   </body>
 </html>
