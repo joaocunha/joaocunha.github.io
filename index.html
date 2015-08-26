@@ -7,13 +7,31 @@
       html, body {
         font-family: monospace;
       }
+
+      .wrapper {
+        text-align: center;
+      }
+
+      .avatar {
+        border-radius: 50%;
+      }
+
+      ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .wrapper * {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
-    <div itemscope itemtype="http://schema.org/Person">
+    <div itemscope itemtype="http://schema.org/Person" class="wrapper">
       <h1 itemprop="name">João Cunha</h1>
       <h2 itemprop="jobTitle">Front-End Engineer</h2>
-      <img src="http://www.gravatar.com/avatar/dcefb2e14174a2488cdffd7cfa721b2f" itemprop="image" alt="Photo of João Cunha, Front-End Engineer" />
+      <img class="avatar" src="http://www.gravatar.com/avatar/dcefb2e14174a2488cdffd7cfa721b2f?s=400" itemprop="image" alt="Photo of João Cunha, Front-End Engineer" />
       <ul>
         <li><a href="mailto:joao@joaocunha.net" itemprop="email">joao@joaocunha.net</a></li>
         <li><a href="https://github.com/joaocunha">GitHub</a></li>
